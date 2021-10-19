@@ -563,4 +563,8 @@ input[id="timeline"]:checked + .timeline{
 .icons{
   font-size: 25px;
 }
+
+.icons :hover{
+color: indigo;
+}
 }
