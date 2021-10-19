@@ -306,6 +306,8 @@ h1,h3{
 
 #myProjects {
   display: flex;
+  margin: 1%;
+ 
 }
 .project-links{
   background-color: rebeccapurple;
@@ -319,6 +321,7 @@ h1,h3{
 .project-links li{
   list-style-type: none;
   text-align: center;
+  font-size: larger;
 }
 .project-links li a{
   text-decoration: none;
@@ -328,7 +331,7 @@ h1,h3{
   color: indianred;
 }
 .projectSlides{
-  background-color: rgb(207, 228, 228);
+  background-color: rebeccapurple;
   flex-basis: 60%;
   justify-self: center;
 }
@@ -368,6 +371,9 @@ input {
 }
 .carousel-item img{
   height:600px;
+}
+#contactMe{
+  margin:1%;
 }
 /* home-mobile */
 @media screen and (max-width: 768px) {
@@ -409,6 +415,12 @@ input {
     flex-direction: column;
   }
   /* timeline */
+  .timeline{
+    display:none;
+  }
+  input[id="timeline"]:checked + .timeline{
+    display: block;
+  }
   /* Place the timelime to the left */
   .timeline::after {
     left: 31px;
@@ -439,6 +451,7 @@ input {
   .right {
     left: 0%;
   }
+ 
   footer ul{
     display: flex;
     justify-content: center;
@@ -496,6 +509,7 @@ input {
     padding: 20px;
     position: relative;
   }
+
   .summary {
     grid-column: 1/4;
     grid-row: 1/2;
@@ -543,7 +557,10 @@ input[id="timeline"]:checked + .timeline{
   top:0;
   left:0;
 }
-h3{
+ h3{
   font-size:xx-large;
+}
+.icons{
+  font-size: 25px;
 }
 }
